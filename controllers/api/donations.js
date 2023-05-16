@@ -1,5 +1,5 @@
 const router = require('express').Router();
-const Donations = require('../models/Donations');
+const { Donations } = require('../../models');
 
 // Router to get all donations
 // Not sure if /donations is needed
