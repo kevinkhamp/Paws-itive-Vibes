@@ -35,18 +35,18 @@ Human.init(
     password: {
       type: DataTypes.STRING,
       allowNull: false,
-      validate: {
-        len: [8],
-      },
+      // validate: {
+      //   len: [8],
+      // },
     },
   },
   {
-    hooks: {
-      async beforeCreate(newHuman) {
-        newHuman.password = await bcrypt.has(newHuman.password, 10);
-        return newHuman;
-      },
-    },
+    // hooks: {
+    //   async beforeCreate(newHuman) {
+    //     newHuman.password = await bcrypt.has(newHuman.password, 10);
+    //     return newHuman;
+    //   },
+    // },
     sequelize,
     timestamps: false,
     freezeTableName: true,
