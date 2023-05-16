@@ -1,5 +1,32 @@
-[{"first_name":"Abigael","last_name":"MacKinnon","email":"amackinnon0@nasa.gov", "password": "Root1234" },
-{"first_name":"Wendy","last_name":"Cerie","email":"wcerie1@tinyurl.com", "password": "Root11234"},
-{"first_name":"Gus","last_name":"Diem","email":"gdiem2@chron.com", "password": "Root12234"},
-{"first_name":"Rakel","last_name":"Bogaert","email":"rbogaert3@engadget.com", "password": "Root13234"},
-{"first_name":"Alvan","last_name":"Moulsdall","email":"amoulsdall4@dedecms.com", "password": "Root14234"}]
+[
+    {
+        "first_name": "Abigael",
+        "last_name": "MacKinnon",
+        "email": "amackinnon0@nasa.gov", 
+        "password": "Root1234" 
+    },
+    {
+        "first_name": "Wendy",
+        "last_name": "Cerie",
+        "email": "wcerie1@tinyurl.com", 
+        "password": "Root11234"
+    },
+    {
+        "first_name": "Gus",
+        "last_name": "Diem",
+        "email": "gdiem2@chron.com", 
+        "password": "Root12234"
+    },
+    {
+        "first_name": "Rakel",
+        "last_name": "Bogaert",
+        "email": "rbogaert3@engadget.com", 
+        "password": "Root13234"
+    },
+    {
+        "first_name": "Alvan",
+        "last_name": "Moulsdall",
+        "email": "amoulsdall4@dedecms.com",
+        "password": "Root14234"
+    }
+]
