@@ -4,7 +4,7 @@ const Donations = require('./Donations');
 const Sponsor = require('./Sponsor');
 const Wishlist = require('./Wishlist');
 
-// Donations.hasMany(Human, {
+// Human.hasMany(Donations, {
 //     foreignKey: 'donator_id',
 // });
 
