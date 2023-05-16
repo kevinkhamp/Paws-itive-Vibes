@@ -15,7 +15,7 @@ Sponsor.init(
       type: DataTypes.INTEGER,
       allowNull: false,
       references: {
-        model: 'humans',
+        model: 'human',
         key: 'id',
       },
     },
@@ -23,7 +23,7 @@ Sponsor.init(
       type: DataTypes.INTEGER,
       allowNull: false,
       references: {
-        model: 'pets',
+        model: 'pet',
         key: 'id',
       },
     },
