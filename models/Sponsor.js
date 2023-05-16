@@ -12,7 +12,7 @@ Sponsor.init(
       autoIncrement: true,
     },
     human_id: {
-      type: DataTypes.STRING,
+      type: DataTypes.INTEGER,
       allowNull: false,
       references: {
         model: 'humans',
@@ -20,7 +20,7 @@ Sponsor.init(
       },
     },
     pet_name: {
-      type: DataTypes.STRING,
+      type: DataTypes.INTEGER,
       allowNull: false,
       references: {
         model: 'pets',
