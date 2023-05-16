@@ -16,7 +16,7 @@ Sponsor.init(
       allowNull: false,
       references: {
         model: 'humans',
-        key: 'first_name',
+        key: 'id',
       },
     },
     pet_name: {
@@ -24,7 +24,7 @@ Sponsor.init(
       allowNull: false,
       references: {
         model: 'pets',
-        key: 'pet_name',
+        key: 'id',
       },
     },
   },

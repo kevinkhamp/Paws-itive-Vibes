@@ -16,7 +16,7 @@ Wishlist.init(
       allowNull: false,
       references: {
         model: 'pets',
-        key: 'pet_name',
+        key: 'id',
       },
     },
     item: {
