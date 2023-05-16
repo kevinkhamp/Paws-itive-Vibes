@@ -1,7 +1,7 @@
-const { Model, DataTypes } = require('sequelize');
-const sequelize = require('../config/connection');
+const { Model, DataTypes } = require("sequelize");
+const sequelize = require("../config/connection");
 
-class Pet extends Model { }
+class Pet extends Model {}
 
 Pet.init(
   {
@@ -25,7 +25,8 @@ Pet.init(
     timestamps: false,
     freezeTableName: true,
     underscored: true,
-    modelName: 'pet',
-  });
+    modelName: "pet",
+  }
+);
 
 module.exports = Pet;
