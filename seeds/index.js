@@ -19,18 +19,22 @@ const seedDatabase = async () => {
     individualHooks: true,
     returning: true,
   });
+
   await Pets.bulkCreate(petData, {
     individualHooks: true,
     returning: true,
   });
+
   await Donations.bulkCreate(donationsData, {
     individualHooks: true,
     returning: true,
   });
+
   await Sponsor.bulkCreate(sponsorData, {
     individualHooks: true,
     returning: true,
   });
+  
   await Wishlist.bulkCreate(wishlistData, {
     individualHooks: true,
     returning: true,
