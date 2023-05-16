@@ -12,7 +12,7 @@ Wishlist.init(
       autoIncrement: true,
     },
     pet_id: {
-      type: DataTypes.STRING,
+      type: DataTypes.INTEGER,
       allowNull: false,
       references: {
         model: 'pets',
