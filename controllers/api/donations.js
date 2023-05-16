@@ -2,6 +2,7 @@ const router = require('express').Router();
 const Donations = require('../models/Donations');
 
 // Router to get all donations
+// Not sure if /donations is needed
 router.get('/donations', async (req,res) => {
     const donData = await Donations.findAll().catch((err) => {
         res.json(err)
@@ -25,6 +26,7 @@ router.get('/donations', async (req,res) => {
 //     }
 // })
 
+// Route to post a new donation
 router.post('/donations', async (req,res) => {
     try {
         const newDonation = await Donations.create({
