@@ -1,12 +1,23 @@
-const router = require("express").Router();
-const donationsRoute = require("./donations");
-const donorRoute = require("./donorRoutes");
-const wishlistRoute = require("./wishlistRoute");
-const petRoutes = require("./petRoutes.js");
 
-router.use("/donations", donationsRoute);
-router.use("/login", donorRoute);
-router.use("/wishlist", wishlistRoute);
-router.use("/pet", petRoutes);
+const router = require('express').Router()
+const donationsRoute = require('./donations')
+const donorRoute = require('./donorRoutes')
+const wishlistRoute = require('./wishlistRoute')
+const petRoute = require('./petRoutes')
 
-module.exports = router;
+// This folder is http://localhost:3001/api
+
+// http://localhost:3001/api/donations
+router.use('/donations', donationsRoute)
+
+// http://localhost:3001/api/donor
+router.use('/donor', donorRoute)
+
+// http://localhost:3001/api/wishlist
+router.use('/wishlist', wishlistRoute)
+
+// http://localhost:3001/api/pets
+router.use('/pets', petRoute)
+
+module.exports = router
+

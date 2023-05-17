@@ -3,12 +3,14 @@ const { Donations }= require('../../models');
 
 // Router to get all donations
 // Not sure if /donations is needed
-router.get('/donations', async (req,res) => {
+
+// GET request @ http://localhost:3001/api/donations/
+router.get('/', async (req,res) => {
     const donData = await Donations.findAll().catch((err) => {
         res.json(err)
     })
     const donations = donData.map((donation) => donation.get({ plain:true }))
-    res.render('all', {donations})
+    res.render('donations', {donations})
 })
 
 // // Router to get one donation
@@ -27,7 +29,8 @@ router.get('/donations', async (req,res) => {
 // })
 
 // Route to post a new donation
-router.post('/donations', async (req,res) => {
+// POST request @ http://localhost:3001/api/donations/
+router.post('/', async (req,res) => {
     try {
         const newDonation = await Donations.create({
             ...req.body,
