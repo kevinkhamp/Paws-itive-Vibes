@@ -1,9 +1,12 @@
-// ~!!!~ Start of Leo's Code ~!!!~
 
-const Pet = require(".../models");
+const router = require("express").Router();
+// ~!!!~ Start of Leo's Code ~!!!~
+const Pet = require("../../models");
 
 // GET all the pets for Pet page
+// GET reqest @ http://localhost:3001/api/pets
 router.get("/", async (req, res) => {
+  console.info('GET request at /api/pets is working');
   try {
     const dbPetData = await Pet.Findall({
       include: [
@@ -28,7 +31,8 @@ router.get("/", async (req, res) => {
 });
 
 // Get one Pet
-router.get("/pet/:id", withAuth, async (req, res) => {
+// GET request @ http://localhost:3001/api/pets/:id
+router.get("/:id", async (req, res) => {
   try {
     const dbPetData = await Pet.findByPK(req.params.id, {
       include: [
@@ -48,3 +52,4 @@ router.get("/pet/:id", withAuth, async (req, res) => {
 });
 
 // ~!!!~ End of Leo's Code ~!!!~
+module.exports = router;

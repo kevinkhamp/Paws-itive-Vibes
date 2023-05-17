@@ -2,7 +2,9 @@ const router = require('express').Router();
 const sequelize = require('../../config/connection');
 const { Wishlist, Human, Donations, Pets, Sponsor } = require('../../models');
 
-router.get('/wishlist', async (req, res) => {
+// GET request @ http://localhost:3001/api/wishlist
+
+router.get('/', async (req, res) => {
   try {
     const wishlistData = await Wishlist.findAll().catch((err) => {
       res.json(err);
