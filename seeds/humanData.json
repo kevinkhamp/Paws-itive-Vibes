@@ -1,32 +1,32 @@
 [
     {
-        "first_name": "Abigael",
-        "last_name": "MacKinnon",
-        "email": "amackinnon0@nasa.gov", 
+        "first_name": "Marni",
+        "last_name": "Luka",
+        "email": "marniluka@pets.com", 
         "password": "Root1234" 
     },
     {
-        "first_name": "Wendy",
-        "last_name": "Cerie",
-        "email": "wcerie1@tinyurl.com", 
+        "first_name": "Leonardo",
+        "last_name": "Liu",
+        "email": "leoliu@pets.com", 
         "password": "Root11234"
     },
     {
-        "first_name": "Gus",
-        "last_name": "Diem",
-        "email": "gdiem2@chron.com", 
+        "first_name": "Kevin",
+        "last_name": "Khamphounvong",
+        "email": "kevinkhamp@pets.com", 
         "password": "Root12234"
     },
     {
-        "first_name": "Rakel",
-        "last_name": "Bogaert",
-        "email": "rbogaert3@engadget.com", 
+        "first_name": "Sal",
+        "last_name": "Monzoor",
+        "email": "salmon@pets.com", 
         "password": "Root13234"
     },
     {
-        "first_name": "Alvan",
-        "last_name": "Moulsdall",
-        "email": "amoulsdall4@dedecms.com",
+        "first_name": "Luc",
+        "last_name": "Martin",
+        "email": "lucmartin@pets.com",
         "password": "Root14234"
     }
 ]

@@ -24,7 +24,7 @@ Donations.init(
       allowNull: false,
     },
     date: {
-      type: DataTypes.INTEGER,
+      type: DataTypes.DATEONLY,
       allowNull: false,
     },
   },

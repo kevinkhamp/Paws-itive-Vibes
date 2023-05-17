@@ -10,7 +10,7 @@ const PORT = process.env.PORT || 3001;
 const session = require('express-session');
 const SequelizeStore = require('connect-session-sequelize')(session.Store);
 
-// // Sets up a login session. MaxAge is 1 hour.
+// Sets up a login session. MaxAge is 1 hour.
 const sess = {
   secret: 'Secret',
   cookie: {
@@ -28,9 +28,9 @@ app.use(session(sess));
 
 // const helpers = require('./utils/helpers');
 
-// const hbs = exphbs.create({helpers});
+const hbs = exphbs.create({});
 
-// app.engine('handlebars', hbs.engine);
+app.engine('handlebars', hbs.engine);
 app.set('view engine', 'handlebars');
 
 app.use(express.json());
