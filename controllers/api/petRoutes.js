@@ -18,7 +18,7 @@ router.get("/", async (req, res) => {
       petGallery.get({ plain: true })
     );
 
-    console.log(petGallery);
+    // console.log(petGallery);
 
     res.render("pets", {
       petGallery,

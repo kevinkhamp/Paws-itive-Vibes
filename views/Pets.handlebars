@@ -1,13 +1,26 @@
 <section class="container">
-    <h1 class="Pet_Images"> Our Furry Friends! </h1>
+    <h1 class="Pet_Images bg-grey"> Our Furry Friends! </h1>
 
     {{!-- {{#if loggedIn}} --}}
 
     {{#each petGallery as |Pet|}}
-    <section class="Pet_Cards">
-    <h2> {{Pet.pet_name}} </h2>
-    <h3> {{Pet.bio}}</h3>
+
+{{!-- Card --}}
+    <section class="Pet_Cards w-60 p-2">
+
+{{!-- image --}}
+    <img class="" src="">
+    <div class=""> </div>
+
+{{!-- header --}}
+    <h2 class=""> {{Pet.pet_name}} </h2>
+
+{{!-- description --}}
+    <p class="text-sm"> {{Pet.bio}}</p>
+
     </section>
+
+
     {{/each}}
     
 </section>
