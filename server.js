@@ -30,14 +30,10 @@ const SequelizeStore = require('connect-session-sequelize')(session.Store);
 
 // const hbs = exphbs.create({helpers});
 
-<<<<<<< HEAD
 const hbs = exphbs.create({});
 
 
 app.engine('handlebars', hbs.engine);
-=======
-// app.engine('handlebars', hbs.engine);
->>>>>>> 2be8c50093e0eb1c1cc2bbf010aa040a1309e274
 app.set('view engine', 'handlebars');
 
 app.use(express.json());
