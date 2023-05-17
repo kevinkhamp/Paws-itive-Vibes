@@ -1,15 +1,35 @@
 <section class="container">
-    <h1 class="Pet_Images"> Our Furry Friends! </h1>
+    <h1 class="Pet_Images flex justify-center"> 
+        Our Furry Friends! 
+    </h1>
 
-    {{!-- {{#if loggedIn}} --}}
+    <div class="flex justify-center items-center">
+        
+{{!-- {{#if loggedIn}} --}}
 
     {{#each petGallery as |Pet|}}
-    <section class="Pet_Cards">
-    <h2> {{Pet.pet_name}} </h2>
-    <h3> {{Pet.bio}}</h3>
+
+{{!-- Card --}}
+    <section class="Pet_Cards w-60 p-2 border-box bg-white rounded-x1">
+
+{{!-- image --}}
+    <img class="Pet pictures" src="">
+    <div class=""> </div>
+
+{{!-- header --}}
+    <h2 class=""> {{Pet.pet_name}} </h2>
+
+{{!-- description --}}
+    <p class="text-sm"> {{bio}}</p>
+
     </section>
+
+
     {{/each}}
     
+    
+    </div>
+
 </section>
 {{!-- {{else}} --}}
 {{!-- <a href="/login">You must login first to view this page!</a> --}}
