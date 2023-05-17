@@ -20,17 +20,17 @@
     <div class="'basis-1/4">
     <h2 class="font-semibold">Recent Donations</h2>
     <hr>
-    {{#each donations as |donations|}}
         <div class="donation">
+            {{#each donations as |donations|}}
             <p>
-                {{donations.date}}
+                <b>{{donations.date}}</b>
                 {{donations.donation}}
             </p>
+            {{/each}}
         </div>
         <div>
             <p></p>
         </div>
     </div>
-    {{/each}}
 </div>
 </section>
