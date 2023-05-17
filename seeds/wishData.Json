@@ -1,18 +1,22 @@
 [
     {
         "pet_id": 1,
-        "item":"carrot"
+        "item":"Cat wheel. Cat is getting chonky and needs to lose weight."
+    },
+    {
+        "pet_id": 2,
+        "item":"A sturdy leash because the old one was gnawed on until it broke... maybe with spikes so he'll look cool and not bite it."
     },
     {
         "pet_id": 3,
-        "item":"potato"
+        "item":"Potato. Real or fake. My cat is weird and is obsessed with potatoes."
     },
     {
         "pet_id": 4,
-        "item":"fish"
+        "item":"Calming spray to help get the cat acclimated to a new place."
     },
     {
         "pet_id": 5,
-        "item":"toy"
+        "item":"Doggy dental treats/toys because he's teething, and my shoes are currently taking a beating. I'm afraid I'm next. Send help."
     }
 ]

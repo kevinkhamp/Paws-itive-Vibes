@@ -1,22 +1,22 @@
 [
     {
-        "pet_name": "Damita",
-        
-        "bio": "Nulla ut erat id mauris vulputate elementum. Nullam varius."},
-    {
-        "pet_name": "Barn",
-        "bio": "Aliquam non mauris. Morbi non lectus. "
+        "pet_name": "Nova",
+        "bio": "She is a 4 year old calico cat that was rescued from the streets by a vet. She is an extremely vocal cat who isn't afraid to talk sass. She enjoys sniffing any food that you have, but for some reason has no interest in eating human food."
     },
     {
-        "pet_name": "Meggie",
-        "bio": "In tempor, turpis nec euismod scelerisque, quam turpis adipiscing lorem, vitae mattis nibh ligula nec sem."
+        "pet_name": "Leo's pet name",
+        "bio": ""
     },
     {
-        "pet_name": "Judd",
-        "bio": "Nullam sit amet turpis elementum ligula vehicula consequat."
+        "pet_name": "Kevin's pet name",
+        "bio": ""
     },
     {
-        "pet_name": "Tandie",
-        "bio":"In quis justo. Maecenas rhoncus aliquam lacus."
+        "pet_name": "Luc's pet name",
+        "bio": ""
+    },
+    {
+        "pet_name": "Ceasar",
+        "bio": "He's a Norwegian hunter type of dog puppy. He loves to play fetch and hunting for treats in hard to reach spots. He's very friendly with people and his favorite hobby is napping."
     }
 ]
