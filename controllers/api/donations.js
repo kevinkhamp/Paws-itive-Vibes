@@ -2,14 +2,13 @@ const router = require('express').Router();
 const { Donations }= require('../../models');
 
 // Router to get all donations
-// Not sure if /donations is needed
-
 // GET request @ http://localhost:3001/api/donations/
 router.get('/', async (req,res) => {
     const donData = await Donations.findAll().catch((err) => {
         res.json(err)
     })
     const donations = donData.map((donation) => donation.get({ plain:true }))
+    // console.log(donations)
     res.render('donations', {donations})
 })
 
@@ -33,7 +32,8 @@ router.get('/', async (req,res) => {
 router.post('/', async (req,res) => {
     try {
         const newDonation = await Donations.create({
-            ...req.body,
+            date: donations.date,
+            donation: donations.donation
         })
         res.status(200).json(newDonation)
     } catch (err) {

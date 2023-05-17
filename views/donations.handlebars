@@ -1,7 +1,7 @@
 {{!-- Prototype Donations page --}}
-
-<div class="donation-container border border-slate-950 w-1/3 p-1">
-    <div class="basis-1/3">
+<section class="flex space-x-5 justify-center">
+<div class="donation-container inline-block border border-slate-950 w-1/4 p-1">
+    <div class="basis-1/4">
     <h2 class="font-semibold">Donation Form</h2>
     <hr>
     </div>
@@ -11,6 +11,26 @@
         <input type="text" class="border rounded border-slate-950 pb-1 pr-3 mb-1" id="Lname" name="Lname" placeholder="Last Name"><br>
         <input type="text" class="border rounded border-slate-950 pb-10 pr-3 mb-1" id="item" name="item" placeholder="Item"><br>
         <input type="date" class="border rounded border-slate-950 pb-1 pr-3 mb-1" id="date" name="date" placeholder="Date"><br>
-        <input type="submit" value="Submit">
+        <button class="btn submit-btn border rounded border-slate-950">Submit Item</button>
+        {{!-- <input type="submit" value="Submit"> --}}
     </form>
 </div>
+
+<div class="last-donation-container inline-block border rounded border-slate-950 w-1/3 p1">
+    <div class="'basis-1/4">
+    <h2 class="font-semibold">Recent Donations</h2>
+    <hr>
+    {{#each donations as |donations|}}
+        <div class="donation">
+            <p>
+                {{donations.date}}
+                {{donations.donation}}
+            </p>
+        </div>
+        <div>
+            <p></p>
+        </div>
+    </div>
+    {{/each}}
+</div>
+</section>
