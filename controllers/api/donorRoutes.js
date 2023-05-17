@@ -3,7 +3,7 @@ const router = require("express").Router(); //using the express npm package
 const { Human } = require("../../models"); // Requires the human table in the models folder
 
 //Creating a login post request for users to log in if they donated before
-
+// POST request @ http://localhost:3001/api/donor/login
 router.post("/login", async (req, res) => {
   try {
     const humanData = await Human.findOne({
@@ -42,6 +42,7 @@ router.post("/login", async (req, res) => {
 });
 
 // Logout for the donor
+// POST request @ http://localhost:3001/api/donor/logout
 router.post("/logout", (req, res) => {
   if (req.session.loggedIn) {
     req.session.destroy(() => {
@@ -53,8 +54,8 @@ router.post("/logout", (req, res) => {
 });
 
 // New user account creation for donor.
-
-router.post("/", async (req, res) => {
+// POST request @ http://localhost:3001/api/donor/newuser
+router.post("/newuser", async (req, res) => {
   try {
     const newUser = await Human.create({
       first_name: req.body.first_name,
