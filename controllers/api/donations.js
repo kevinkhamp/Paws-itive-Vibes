@@ -10,7 +10,7 @@ router.get('/', async (req,res) => {
         res.json(err)
     })
     const donations = donData.map((donation) => donation.get({ plain:true }))
-    res.render('all', {donations})
+    res.render('donations', {donations})
 })
 
 // // Router to get one donation
