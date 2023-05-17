@@ -1,1 +1,25 @@
-<p>This is the home page</p>
+<div class="text-center grid grid-cols-2 m-5">
+    <div class="border-double border-8 rounded-md m-5">
+        <p class="text-5xl">Pet of the Month:</p>
+        {{!-- Cat image here. Gonna try and make this a carousel once we can get the pictures rendered. --}}
+        <img src="" alt="Bestest cat in the world">
+        <p></p>
+    </div>
+    <div class="grid grid-rows-2 m-5 ">
+        <div class="border-double border-8 rounded-md mb-5 p-5">
+            <p class="text-4xl">About us:</p>
+            <br>
+            <p class="text-xl text-left">
+                We are a non-profit organization that focuses on helping financially struggling shelters and pet owners. Already a pet owner to a particularly picky creature? Feel free to send both used (within reason) and new items that your life-long companion doesn't appreciate! We accept food, toys, pee pads and litter, along with other commonly used items. No matter how small, we appreciate any and all contributions!
+            </p>
+            <br>
+            <p class="text-xl text-left">
+                To donate, simply send your item to <span class="font-bold">1234 Paws Adventure Road, Georgia</span> and fill out the donation form on the donate page so we know to expect it's arrival!
+            </p>
+        </div>
+        <div class="border-double border-8 rounded-md"> 
+            <p class="text-4xl pb-5">Sign up to become a <span class="text-5xl">donor</span> today!</p>
+            <a href="/api/" id="sign-up" class="border border-solid p-3 text-5xl">Sign Up!</a>
+        </div>
+    </div>
+</div>
