@@ -1,0 +1,16 @@
+<section class="container">
+    <h1 class="Pet_Images"> Our Furry Friends! </h1>
+
+    {{!-- {{#if loggedIn}} --}}
+
+    {{#each petGallery as |Pet|}}
+    <section class="Pet_Cards">
+    <h2> {{Pet.pet_name}} </h2>
+    <h3> {{Pet.bio}}</h3>
+    </section>
+    {{/each}}
+    
+</section>
+{{!-- {{else}} --}}
+{{!-- <a href="/login">You must login first to view this page!</a> --}}
+{{!-- {{/if}} --}}

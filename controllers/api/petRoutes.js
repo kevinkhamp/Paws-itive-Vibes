@@ -1,25 +1,27 @@
 // ~!!!~ Start of Leo's Code ~!!!~
 
-const Pet = require(".../models");
+const { Pets } = require("../../models");
+const router = require("express").Router();
 
 // GET all the pets for Pet page
 router.get("/", async (req, res) => {
   try {
-    const dbPetData = await Pet.Findall({
-      include: [
-        {
-          Model: Pet,
-          attributes: ["id", "pet_name"],
-        },
-      ],
+    const dbPetData = await Pets.findAll({
+      // include: {
+      // model: Pets,
+      // attributes: ["id", "pet_name"],
+      // },
     });
+    // console.log(dbPetData);
 
     const petGallery = dbPetData.map((petGallery) =>
       petGallery.get({ plain: true })
     );
 
+    console.log(petGallery);
+
     res.render("pets", {
-      pet,
+      petGallery,
     });
   } catch (err) {
     console.log(err);
@@ -28,9 +30,9 @@ router.get("/", async (req, res) => {
 });
 
 // Get one Pet
-router.get("/pet/:id", withAuth, async (req, res) => {
+router.get("/pet/:id", async (req, res) => {
   try {
-    const dbPetData = await Pet.findByPK(req.params.id, {
+    const dbPetData = await Pets.findByPK(req.params.id, {
       include: [
         {
           model: Pet,
@@ -47,4 +49,5 @@ router.get("/pet/:id", withAuth, async (req, res) => {
   }
 });
 
+module.exports = router;
 // ~!!!~ End of Leo's Code ~!!!~
