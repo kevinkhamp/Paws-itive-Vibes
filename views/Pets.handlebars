@@ -3,31 +3,27 @@
         Our Furry Friends! 
     </h1>
 
+    {{!-- For ALL cards --}}
     <div class="flex justify-center items-center">
-        
-{{!-- {{#if loggedIn}} --}}
+        {{!-- {{#if loggedIn}} --}}
 
-    {{#each petGallery as |Pet|}}
+        {{#each petGallery as |Pet|}}
 
-{{!-- Card --}}
-    <section class="Pet_Cards w-60 p-2 border-box bg-white rounded-x1">
+        {{!-- Card --}}
+        <section class="Pet_Cards w-60 p-2 border-box bg-white rounded-x1 shadow-lg transform transition-all hover:-translate-y-2 duration-300 hover:shadow-2x1">
 
-{{!-- image --}}
-    <img class="Pet pictures" src="">
-    <div class=""> </div>
+        {{!-- image --}}
+        <img class="Pet pictures rounded-x1" src="">
+        <div class="p-2"> </div>
 
-{{!-- header --}}
-    <h2 class=""> {{Pet.pet_name}} </h2>
+        {{!-- header --}}
+        <h2 class="font-bold m-2"> {{Pet.pet_name}} </h2>
 
-{{!-- description --}}
-    <p class="text-sm"> {{bio}}</p>
+        {{!-- description --}}
+        <p class="text-sm m-2"> {{bio}}</p>
 
-    </section>
-
-
-    {{/each}}
-    
-    
+        </section>
+        {{/each}}
     </div>
 
 </section>
