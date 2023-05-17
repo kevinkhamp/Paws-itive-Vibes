@@ -3,7 +3,6 @@ const sequelize = require('../../config/connection');
 const { Wishlist, Human, Donations, Pets, Sponsor } = require('../../models');
 
 // GET request @ http://localhost:3001/api/wishlist
-
 router.get('/', async (req, res) => {
   try {
     const wishlistData = await Wishlist.findAll().catch((err) => {

@@ -1,9 +1,10 @@
 {{!-- Need flex and card CSS --}}
 <section>
     {{#each wishs as |wish|}}
-    <p>penguin
+    <p>
         {{wish.id}}
-        </p>
-    
+        {{wish.pet_id}}
+        {{wish.item}}
+    </p>
     {{/each}}
 </section>
