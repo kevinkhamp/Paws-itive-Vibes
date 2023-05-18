@@ -30,8 +30,9 @@ router.post('/', async (req,res) => {
     try {
         const newDonation = await Donations.create({
             donation: donations.donation,
-            date: donations.date,
+            date: donations.date
         })
+        console.log(newDonation)
         res.status(200).json(newDonation)
     } catch (err) {
         res.status(400).json(err)
