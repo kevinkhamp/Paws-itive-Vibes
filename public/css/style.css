@@ -1,5 +1,4 @@
 body {
-    background-color: rgba(184, 94, 67, 0.37);
     font-family: 'Dosis', sans-serif;
 }
 
@@ -11,21 +10,41 @@ body {
     background-color: rgba(45, 143, 156, 0.336);
 }
 
+#buttons:hover {
+    background-color: rgba(45, 143, 156, 0.493);
+}
+
+main {
+    background-color: rgba(184, 94, 67, 0.37);
+}
+
 #sign-up {
     background-color: rgba(45, 143, 156, 0.336);
 }
 
-footer {
-    background-color:  rgba(45, 143, 156, 0.336);
-}
-
 .nav-logo-link {
-    width: 200px;
-    height: 150px;
+    width: 50%;
+    height: 200px;
 }
 
 .pet-month {
     padding: 5px;
-    width: 100%;
-    height: 75%;
+    width: 75%;
+    height: 80%;
+}
+
+#submit {
+    background-color: rgba(48, 165, 180, 0.397);
+}
+
+#submit:hover {
+    background-color: rgba(48, 165, 180, 0.527);
+}
+
+footer {
+    background-color:  rgba(36, 118, 129, 0.336);
+}
+
+.footer-logo {
+    width: 45%;
 }
