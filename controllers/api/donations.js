@@ -1,6 +1,5 @@
 const router = require('express').Router();
 const { Donations }= require('../../models');
-const {readAndAppend} = require('../../helpers/fsUtil')
 
 // Router to get all donations
 // GET request @ http://localhost:3001/api/donations/
