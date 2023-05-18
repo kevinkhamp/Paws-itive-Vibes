@@ -14,12 +14,9 @@ const formSubmission = async (e) => {
     const date = document.getElementById('date').value
     console.log(date)
 
-    const postVal = await fetch('/donations', {
+    const postVal = await fetch(`api/donations`, {
         method: "POST",
-        body: JSON.stringify({
-            donation: item,
-            date: date
-        }),
+        body: JSON.stringify({item, date}),
         headers: {'Content-Type': 'application/json'},
     })
     console.log(postVal)
