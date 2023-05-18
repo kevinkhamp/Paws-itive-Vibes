@@ -1,4 +1,4 @@
-<!-- template for the final readme. Please review and provide edits if possible -->
+<!-- template for the final readme. -->
 
 # Paws-itive-Vibes
 
