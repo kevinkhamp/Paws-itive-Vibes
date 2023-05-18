@@ -29,7 +29,7 @@ https://github.com/shimpfierie/Paws-itive-Vibes
 
 This website was created using handlebars, tailwind, npm packages, mysql, and deployed using Heroku.
 
-## Usage
+## Usage For Project
 
 One of the key tools we employed for this project was Tailwind, a revolutionary CSS framework that revolutionized the way we handled the styling and layout of our code. By leveraging Tailwind, we were able to streamline our CSS workflow and achieve a consistent and visually appealing design.
 
@@ -41,4 +41,6 @@ To automate the server restart process during development, we incorporated Nodem
 
 To create dynamic and interactive user interfaces, we adopted Handlebars, a powerful templating engine. Handlebars allowed us to efficiently render dynamic content, ensuring a smooth and engaging user experience.
 
-The initial step in our project journey involved meticulous planning and visualization. We began by wireframing our website, mapping out its structure, and sketching the desired layout. Concurrently, we meticulously designed the backend database, identifying primary and foreign keys to establish robust relationships between the various entities. We then deployed our app to heroku to see how it looks live. From there, we coded the backend and made sure the api routes were correctly being pathed. From there, we implemented and worked on the frontend of the website.
+The initial step in our project journey involved meticulous planning and visualization. We began by wireframing our website, mapping out its structure, and sketching the desired layout. Concurrently, we meticulously designed the backend database, identifying primary and foreign keys to establish robust relationships between the various entities.
+
+We then deployed our app to heroku to see how it looks live. From there, we coded the backend and made sure the api routes were correctly being pathed. From there, we implemented and worked on the frontend of the website.
