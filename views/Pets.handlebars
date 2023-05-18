@@ -17,11 +17,12 @@
         <div class="p-2"> </div>
 
         {{!-- arrow --}}
-        <input type="checkbox" class="peer absolute top-0 inset-x-0 w-full h-12 opacity-0 z-10 cursor-pointer" />
+        
 
         {{!-- header --}}
         <h2 class="font-bold m-2 transition-transform duration-500 peer-checked:rotate-180"> {{Pet.pet_name}} </h2>
-
+        <input type="checkbox" class="peer absolute top-0 inset-x-0 w-full h-12 opacity-0 z-10 cursor-pointer" />
+        
         {{!-- description --}}
         <p class="text-xl m-2 overflow-hidden transition-all duration-500 max-h-0 peer-checked:max-h-40 "> {{bio}}</p>
 
@@ -30,6 +31,3 @@
     </div>
 
 </section>
-{{!-- {{else}} --}}
-{{!-- <a href="/login">You must login first to view this page!</a> --}}
-{{!-- {{/if}} --}}

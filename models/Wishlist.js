@@ -5,13 +5,7 @@ class Wishlist extends Model { }
 
 Wishlist.init(
   {
-    id: {
-      type: DataTypes.INTEGER,
-      allowNull: false,
-      primaryKey: true,
-      autoIncrement: true,
-    },
-    pet_id: {
+    wish_id: {
       type: DataTypes.INTEGER,
       allowNull: false,
       references: {
