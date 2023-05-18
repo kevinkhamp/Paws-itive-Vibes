@@ -1,18 +1,18 @@
-<section class="py-6">
-    <h1 class="flex flex-wrap justify-center text-3xl pt-5 px-5 text-center">
+<section class="p-5">
+    <h1 class="flex flex-wrap justify-center text-4xl p-3 px-5 text-center">
         Our Wishlist
     </h1>
-    <h2 class="flex flex-wrap justify-center text-1xl p-1 text-center">
-        These are somethings we could use to help in taking care of the animals we have.
+    <h2 class="flex flex-wrap justify-center text-xl pb-5 text-center">
+        These are some things we could use to help in taking care of the animals we have.
     </h2>
-    <div id="donateWish" class="flex flex-wrap justify-center items-center gap-4">
+    <div id="donateWish" class="flex flex-wrap justify-center items-center gap-4 pb-3">
         {{#each wishes as |wish|}}
         <section
             class="w-60 p-2 border-box bg-white rounded-lg shadow-lg transform transition-all hover:-translate-y-2 duration-300 hover:shadow-2x1">
-            <img class="rounded-lg object-scale-down h-48 w-96" src="/images/wishlist/{{wish.id}}.jpg"
+            <img class="rounded-lg object-scale-down h-48 w-96" src="/images/wishlist/{{wish.wish_id}}.jpg"
                 alt="Wishlist items">
-            <h2 class="font-bold m-2"> {{wish.item}} </h2>
-            <p class="text-sm m-2 transition-transform"> {{wish.description}}</p>
+            <h2 class="font-bold m-2 text-2xl"> {{wish.item}} </h2>
+            <p class="text-md m-2 transition-transform "> {{wish.description}}</p>
         </section>
         {{/each}}
     </div>
