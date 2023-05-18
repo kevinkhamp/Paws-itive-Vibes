@@ -12,16 +12,16 @@
     {
         "wish_id": 3,
         "item":"Potato",
-        "description": "Real or fake. The cats are weird and obsessed with potatoes."
+        "description": "Real or fake. The cats are weird and are obsessed with potatoes."
     },
     {
         "wish_id": 4,
         "item":"Calming spray",
-        "description": "Help get the cats acclimated to a new place."
+        "description": "To help get the cats acclimated to a new place."
     },
     {
-        "wish_id": 5,
-        "item":"Doggy dental treats/toys",
+        "pet_id": 5,
+        "item":"Doggy dental treats",
         "description": "Dogs are teething, and my shoes are currently taking a beating."
     }
 ]
