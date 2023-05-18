@@ -2,12 +2,12 @@
 
 # Paws-itive-Vibes
 
-Description
-This application is to showcase a donations website for pets. The idea is for pet owners that have old toys or items they do not need to basically donate to those who are looking for items for their pets. We have a responsive home page showcasing pet of the month, a donatate now button which will redirect the user to the donate page. The user can either log in to store their information, or donate one time and not make an account.
+## Description
+This application is to showcase a donations website for pets. The idea is for pet owners that have old toys or items they do not need to donate to those who are looking for items for their pets. We have a responsive navbar, a homepage showcasing pet of the month, and a 'sign up' button which will redirect the user to the donate page. The user can either log in to store their information, or donate one time and not make an account.
 
 ## Deployed URL
 
-https://dashboard.heroku.com/apps/paws-tive/deploy/github
+https://paws-tive.herokuapp.com/
 
 ## Github Repo
 
@@ -15,19 +15,19 @@ https://github.com/shimpfierie/Paws-itive-Vibes
 
 ## Group Presentation
 
-[Google Slides] - (will insert link here)
+[Google Slides](https://docs.google.com/presentation/d/1qRpD5RI6PBjzRn_QjX9RpiLesv6wshiSgdjEA7yMgfY/edit#slide=id.p)
 
-## Collaborators -
+## Collaborators
 
 - Marni Luka
-  -Kevin Khamphounvong
+- Kevin Khamphounvong
 - Leo Liu
-  -Sal Monzoor
+- Sal Monzoor
 - Luc Martin
 
 ## Technologies Used
 
-This website was created using handlebars, tailwind, npm packages, mysql, and deployed using Heroku.
+This website was created using handlebars, tailwind, npm packages, and mysql. Application was deployed using Heroku.
 
 ## Usage For Project
 
