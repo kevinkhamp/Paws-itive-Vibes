@@ -1,61 +1,34 @@
 {{!-- Tempoary code for the donor page. Still need to divide the two forms left to right --}}
 
 <section class="flex space-x-5 justify-center">
-<div class="donation-container inline-block border border-slate-950 w-1/4 p-1">
-<div class="basis-1/4">
- <h2 class="font-semibold">Donor Log in Page/ Sign up Form</h2>
-</div>
-<hr>
-</div>
+    <div class="donation-container inline-block border border-slate-950 w-1/4 p-1">
+        <div class="basis-1/4">
+            <h2 class="font-semibold">Donor Log in Page/Sign up Form</h2>
+            <hr>
+        </div>
+        </div>
+        
+        <section class="sign-up-form border border-s-slate-950">
+        <form>
+            {{! Form Options required for new users }}
+            <section class="sign-up-form">
+                <div class="form-group">
+                    <input type="text" class="border rounded border-slate-950 pb-1 pr-3 mb-1" id="Fname" name="Firstname" placeholder="First Name"/><br/>
+                </div>
+                <div class="form-group">
+                    <input type="text" class="border rounded border-slate-950 pb-1 pr-3 mb-1" id="Lname" name="Lastname" placeholder="Last Name"/><br/>
+                </div>
+                <div class="form-group">
+                    <input type="email" class="border rounded border-slate-950 pb-10 pr-3 mb-1" id="Email" name="EmailAddress" placeholder="Email Address"/><br/>
+                </div>
+            <input type="password" class="border rounded border-slate-950 pb-10 pr-3 mb-1" id="Password" name="Password" placeholder="Password"/><br/>
+            <button type="submit" value="Submit"/>Sign Up</button>
+        </form>
+        </section>
 
-  <form>
-    {{! Form Options required for new users }}
-    <input
-      type="text"
-      class="border rounded border-slate-950 pb-1 pr-3 mb-1"
-      id="Fname"
-      name="Firstname"
-      placeholder="First Name"
-    /><br />
-    <input
-      type="text"
-      class="border rounded border-slate-950 pb-1 pr-3 mb-1"
-      id="Lname"
-      name="Lastname"
-      placeholder="Last Name"
-    /><br />
-    <input
-      type="email"
-      class="border rounded border-slate-950 pb-10 pr-3 mb-1"
-      id="Email"
-      name="EmailAddress"
-      placeholder="Email Address"
-    /><br />
-     <input
-      type="password"
-      class="border rounded border-slate-950 pb-10 pr-3 mb-1"
-      id="Password"
-      name="Password"
-      placeholder="Password"
-       /><br />
-    <input type="submit" value="Submit" />
-  </form>
-
-<form>
-    {{! Form Options required for Returining users }}
-    <input
-      type="email"
-      class="border rounded border-slate-950 pb-10 pr-3 mb-1"
-      id="item"
-      name="item"
-      placeholder="Email Address"
-     /><br />
-     <input
-      type="password"
-      class="border rounded border-slate-950 pb-10 pr-3 mb-1"
-      id="Password"
-      name="Password"
-      placeholder="Password"
-     /><br />
-     <input type="submit" value="Submit" />
-</div>
+        <form>
+            {{! Form Options required for Returining users }}
+            <input type="email" class="border rounded border-slate-950 pb-10 pr-3 mb-1" id="item" name="item" placeholder="Email Address"/><br/>
+            <input type="password" class="border rounded border-slate-950 pb-10 pr-3 mb-1" id="Password" name="Password" placeholder="Password"/><br/>
+            <button type="submit" value="Submit"/>Log In</button>
+        </div>

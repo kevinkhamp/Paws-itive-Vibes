@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -14,13 +15,13 @@
     {{!-- CSS link --}}
     <link rel="stylesheet" href="/css/style.css">
 </head>
+
 <body>
   <div id="nav" class="p-9">
     <nav class="inline ">
-      <a href="/">
       {{!-- Website logo --}}
-        <img src="" alt="Paws-itive Vibes Logo">
-      </a>
+        <img class="logo nav-logo-link" src="./images/test.png" alt="Paws-itive Vibes Logo"/>
+
       <div class="inline flex justify-end mx-5 text-lg ">
           <a href="/api/donations" id="buttons" class="font-bold  hover: mx-5 px-8 py-2 rounded-md">
             Donate
@@ -31,15 +32,16 @@
           <a href="/api/wishlist" id="buttons" class="font-bold  hover: mx-5 px-8 py-2 rounded-md">
             Wishlist
           </a>
-          <a href="/api/login" id="buttons" class="font-bold  hover: mx-5 px-8 py-2 rounded-md">
+          <a href="/api/donor" id="buttons" class="font-bold  hover: mx-5 px-8 py-2 rounded-md">
             Login
           </a>
       </div>
     </nav>
   </div>
 
+<main>
   {{{body}}}
-
+</main>
 
 <footer>
     <div class="mx-auto w-full max-w-screen-xl p-4 py-6 lg:py-8">

@@ -2,6 +2,15 @@ const router = require("express").Router(); //using the express npm package
 
 const { Human } = require("../../models"); // Requires the human table in the models folder
 
+router.get('/', async (req,res) => {
+  // res.json("Hi")
+  const userData = await Human.findAll().catch((err) => {
+    res.json(err)
+  })
+  const human = userData.map((email) => email.get ({plain:true}))
+  res.render('donor', {human})
+})
+
 //Creating a login post request for users to log in if they donated before
 // POST request @ http://localhost:3001/api/donor/login
 router.post("/login", async (req, res) => {
