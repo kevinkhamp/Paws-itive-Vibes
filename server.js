@@ -45,7 +45,7 @@ app.get('/homepage', (req,res) => {
 app.use(routes);
 
 sequelize.sync({ force: false }).then(() => {
-  app.listen(PORT, () => console.log('Now listening'));
+  app.listen(PORT, () => console.log(`http://localhost:${PORT}`));
 });
 
 // ./node_modules/nodemon/bin/nodemon.js server.js

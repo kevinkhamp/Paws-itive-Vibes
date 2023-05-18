@@ -9,7 +9,7 @@ router.get('/', async (req, res) => {
       res.json(err);
     });
     const wishes = wishlistData.map((wish) => wish.get({ plain: true}));
-    res.render('wishlist'), {wishes};
+    res.render('wishlist', {wishes});
   } catch (err) {
     res.status(500).json(err);
   }
