@@ -20,7 +20,7 @@
         "description": "To help get the cats acclimated to a new place."
     },
     {
-        "pet_id": 5,
+        "wish_id": 5,
         "item":"Doggy dental treats",
         "description": "Dogs are teething, and my shoes are currently taking a beating."
     }
