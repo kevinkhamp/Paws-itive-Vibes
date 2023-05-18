@@ -1,10 +1,10 @@
 <section class="container">
-    <h1 class="Pet_Images flex justify-center"> 
-        Our Furry Friends! 
+    <h1 class="Pet_Images flex justify-center text-3xl p-5"> 
+        Meet Our Furry Friends! 
     </h1>
 
     {{!-- For ALL cards --}}
-    <div class="flex justify-center items-center gap-2">
+    <div class="flex justify-center items-center gap-2 p-5">
         {{!-- {{#if loggedIn}} --}}
 
         {{#each petGallery as |Pet|}}
@@ -17,12 +17,13 @@
         <div class="p-2"> </div>
 
         {{!-- arrow --}}
-        <input type="checkbox" class="peer absolute top-0 inset-x-0 w-full h-12 opacity-0 z-10 cursor-pointer">
+        <input type="checkbox" class="peer absolute top-0 inset-x-0 w-full h-12 opacity-0 z-10 cursor-pointer" />
+
         {{!-- header --}}
         <h2 class="font-bold m-2 transition-transform duration-500 peer-checked:rotate-180"> {{Pet.pet_name}} </h2>
 
         {{!-- description --}}
-        <p class="text-sm m-2 overflow-hidden transition-all duration-500 max-h-0 peer-checked:max-h-40 "> {{bio}}</p>
+        <p class="text-xl m-2 overflow-hidden transition-all duration-500 max-h-0 peer-checked:max-h-40 "> {{bio}}</p>
 
         </section>
         {{/each}}
