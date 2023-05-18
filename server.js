@@ -41,6 +41,9 @@ app.use(express.static(path.join(__dirname, 'public')));
 app.get('/homepage', (req,res) => {
   res.render('hompage')
 })
+app.get('/pets', (req,res) => {
+  res.render('pets')
+})
 
 app.use(routes);
 
