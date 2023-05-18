@@ -23,3 +23,9 @@ footer {
     width: 200px;
     height: 150px;
 }
+
+.pet-month {
+    padding: 5px;
+    width: 100%;
+    height: 75%;
+}
