@@ -1,4 +1,4 @@
-console.log('hi')
+console.log("You weren't suppose to see this...")
 
 const donationForm = document.getElementById('donationForm')
 
@@ -14,20 +14,12 @@ const formSubmission = async (e) => {
     const date = document.getElementById('date').value
     console.log(date)
 
-    const postVal = await fetch('/donations/donate', {
+    const postVal = await fetch(`api/donations`, {
         method: "POST",
-        body: JSON.stringify({
-            donation: item,
-            date: date
-        }),
+        body: JSON.stringify({item, date}),
         headers: {'Content-Type': 'application/json'},
     })
-}
-
-if(postVal.ok) {
-    alert('Thank you!')
-} else {
-    alert('Code broken')
+    console.log(postVal)
 }
 
 donationForm.addEventListener('submit', formSubmission)
