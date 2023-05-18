@@ -13,15 +13,12 @@ router.get('/', async (req,res) => {
 })
 
 // // Router to get one donation
-// router.get('/donations/:id', async (req,res) => {
+// router.get('/:id', async (req,res) => {
 //     try {
 //         const donData = await Donations.findByPK(req.params.id)
-//         if (!donData) {
-//             res.status(404).json({ message: 'No donations!'})
-//             return
-//         }
-//         const donation = donData.get({ plain:true })
-//         res.render('donations',donation)
+//         console.log(donData)
+//         const donations = donData.get({ plain:true })
+//         res.render('donations',{donations})
 //     } catch (err) {
 //         res.status(500)
 //     }
