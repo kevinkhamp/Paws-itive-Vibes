@@ -1,21 +1,21 @@
 [
     {
-        "pet_id": 1,
+        "wish_id": 1,
         "item":"Cat wheel.",
         "description": "Cat is getting chonky and needs to lose weight."
     },
     {
-        "pet_id": 2,
+        "wish_id": 2,
         "item":"Sturdy leashes",
         "description": "The old ones are gnawed on and breaking."
     },
     {
-        "pet_id": 3,
+        "wish_id": 3,
         "item":"Potato",
         "description": "Real or fake. The cats are weird and are obsessed with potatoes."
     },
     {
-        "pet_id": 4,
+        "wish_id": 4,
         "item":"Calming spray",
         "description": "To help get the cats acclimated to a new place."
     },
