@@ -37,6 +37,11 @@ app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 app.use(express.static(path.join(__dirname, 'public')));
 
+// Section to load images on handlebar files
+app.get('/homepage', (req,res) => {
+  res.render('hompage')
+})
+
 app.use(routes);
 
 sequelize.sync({ force: false }).then(() => {

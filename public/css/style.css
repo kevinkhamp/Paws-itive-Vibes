@@ -18,3 +18,8 @@ body {
 footer {
     background-color:  rgba(45, 143, 156, 0.336);
 }
+
+.nav-logo-link {
+    width: 200px;
+    height: 150px;
+}
