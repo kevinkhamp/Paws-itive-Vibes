@@ -25,12 +25,15 @@ router.get('/', async (req,res) => {
 // })
 
 // Route to post a new donation
+// POST request works in Insomnia but not on the website
 // POST request @ http://localhost:3001/api/donations/
 router.post('/', async (req,res) => {
     try {
         const newDonation = await Donations.create({
-            donation: donations.donation,
-            date: donations.date
+            first_name: req.body.first_name,
+            last_name: req.body.last_name,
+            donation: req.body.donation,
+            date: req.body.date
         })
         console.log(newDonation)
         res.status(200).json(newDonation)

@@ -1,26 +1,31 @@
 [
     {
-        "donator_id": 1,
+        "first_name": "Marni",
+        "last_name": "Luka",
         "donation": "Super cute, but unused cat scratcher.",
         "date": "2023-03-26"
     },
     {
-        "donator_id": 2,
+        "first_name": "Leonardo",
+        "last_name": "Liu",
         "donation": "Toys not used by pet because they're super picky.",
         "date": "2023-04-02"
     },
     {
-        "donator_id": 3,
+        "first_name": "Kevin",
+        "last_name": "Khamphounvong",
         "donation": "Bed that cat never used because they like boxes more.",
         "date": "2023-04-17"
     },
     {
-        "donator_id": 4,
+        "first_name": "Sal",
+        "last_name": "Monzoor",
         "donation": "Kibble that dog refuses to eat.",
         "date": "2023-05-01"
     },
     {
-        "donator_id": 5,
+        "first_name": "Luc",
+        "last_name": "Martin",
         "donation": "Semi-used small cat tower that cat has grown out of.",
         "date": "2023-05-06"
     }

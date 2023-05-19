@@ -11,13 +11,21 @@ Donations.init(
       primaryKey: true,
       autoIncrement: true,
     },
-    donator_id: {
-      type: DataTypes.INTEGER,
+    // donator_id: {
+    //   type: DataTypes.INTEGER,
+    //   allowNull: false,
+    //   references: {
+    //     model: 'human',
+    //     key: 'id',
+    //   },
+    // },
+    first_name: {
+      type: DataTypes.STRING,
       allowNull: false,
-      references: {
-        model: 'human',
-        key: 'id',
-      },
+    },
+    last_name: {
+      type: DataTypes.STRING,
+      allowNull: false,
     },
     donation: {
       type: DataTypes.STRING,
