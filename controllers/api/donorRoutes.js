@@ -13,7 +13,7 @@ router.get('/', async (req,res) => {
 
 //Creating a login post request for users to log in if they donated before
 // POST request @ http://localhost:3001/api/donor/login
-router.post("/login", async (req, res) => {
+router.post("/", async (req, res) => {
   try {
     const humanData = await Human.findOne({
       where: {
@@ -52,7 +52,7 @@ router.post("/login", async (req, res) => {
 
 // Logout for the donor
 // POST request @ http://localhost:3001/api/donor/logout
-router.post("/logout", (req, res) => {
+router.post("/", (req, res) => {
   if (req.session.loggedIn) {
     req.session.destroy(() => {
       res.status(204).end();
@@ -64,7 +64,7 @@ router.post("/logout", (req, res) => {
 
 // New user account creation for donor.
 // POST request @ http://localhost:3001/api/donor/newuser
-router.post("/newuser", async (req, res) => {
+router.post("/", async (req, res) => {
   try {
     const newUser = await Human.create({
       first_name: req.body.first_name,
