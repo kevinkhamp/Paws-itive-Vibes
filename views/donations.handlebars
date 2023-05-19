@@ -21,11 +21,11 @@
         </form>
     </div>
 
-    <div class="last-donation-container border-double border-8 rounded-md m-5 p-5">
+    <div class="recent-donation-container border-double border-8 rounded-md m-5 p-5">
         <div class="basis-1/4">
                 <h2 class="font-semibold text-center text-4xl">Recent Donations</h2>
                 <hr>
-                <div class="donation p-4 text-2xl">
+                <div class="donation-cont p-4 text-2xl" id="donation-cont">
                     {{#each donations as |donations|}}
                     <p>
                     <b>{{donations.date}}</b>
