@@ -7,7 +7,7 @@ This application is to showcase a donations website for pets. The idea is for pe
 
 ## Deployed URL
 
-https://paws-tive.herokuapp.com/
+[https://paws-tive.herokuapp.com/](https://paws-tive-c32df2c49a99.herokuapp.com/)
 
 ## Github Repo
 
